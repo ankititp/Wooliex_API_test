@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8792" started-at="2019-05-22T00:03:19Z" finished-at="2019-05-22T00:03:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8792" started-at="2019-05-22T00:03:19Z" finished-at="2019-05-22T00:03:28Z">
+      <class name="com.qa.tests.GetAPITest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.GetAPITest@7ca48474]" name="setUp" is-config="true" duration-ms="6" started-at="2019-05-22T10:03:19Z" finished-at="2019-05-22T10:03:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="getAPITestWithoutHeaders()[pri:1, instance:com.qa.tests.GetAPITest@7ca48474]" name="getAPITestWithoutHeaders" duration-ms="8513" started-at="2019-05-22T10:03:19Z" finished-at="2019-05-22T10:03:27Z">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["data"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["data"] not found.
+	at org.json.JSONObject.get(JSONObject.java:471)
+	at com.qa.util.TestUtil.getValueByJPath(TestUtil.java:16)
+	at com.qa.tests.GetAPITest.getAPITestWithoutHeaders(GetAPITest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPITestWithoutHeaders -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.GetAPITest@7ca48474]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-22T10:03:27Z" finished-at="2019-05-22T10:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="getAPITestWithHeaders()[pri:2, instance:com.qa.tests.GetAPITest@7ca48474]" name="getAPITestWithHeaders" duration-ms="254" started-at="2019-05-22T10:03:27Z" finished-at="2019-05-22T10:03:28Z">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["per_page"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["per_page"] not found.
+	at org.json.JSONObject.get(JSONObject.java:471)
+	at com.qa.util.TestUtil.getValueByJPath(TestUtil.java:14)
+	at com.qa.tests.GetAPITest.getAPITestWithHeaders(GetAPITest.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPITestWithHeaders -->
+      </class> <!-- com.qa.tests.GetAPITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
