@@ -22,7 +22,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 @Test
-public class GetAPITest extends TestBase{
+public class GetAPITestt extends TestBase{
 	TestBase testBase;
 	String serviceUrl;
 	String apiUrl;

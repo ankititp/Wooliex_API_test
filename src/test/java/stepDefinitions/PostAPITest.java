@@ -1,4 +1,4 @@
-package stepDefinitions;
+/*package stepDefinitions;
 
 package com.qa.tests;
 
@@ -92,3 +92,4 @@ public class PostAPITest extends TestBase{
 	
 
 }
+*/

@@ -9,7 +9,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 	@CucumberOptions(
 			
-			features = "/Users/Agupta/Documents/APIAutomationUsingHTTPClient-master/APIAutomationUsingHTTPClient-master/src/main/java/Features/Brokers.feature",
+			features = "/Users/ankit/Downloads/APIAutomationUsingHTTPClient-master/APIAutomationUsingHTTPClient-master/src/main/java/Features/Holiday.feature",
 
 			//glue="/Users/ankit/Downloads/CucumberSeleniumFramework-master/src/main/java/stepDefinitions/Brokers.java"//the path of the step definition files
 				glue = {"stepDefinitions"},

@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "A happy holidaymaker",
+        "description": "",
+        "id": "a-holday-holiday-maker;a-happy-holidaymaker",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 158827543,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I like to holiday in Sydney",
+            "match": {
+              "location": "GetAPITest.setUp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 922006,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I look up the weather forecast",
+            "match": {
+              "location": "GetAPITest.enter_valid_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2964057375,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I receive the weather forecast",
+            "match": {
+              "location": "GetAPITest.recieve_forecast()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1634941959,
+              "error_message": "org.json.JSONException: JSONObject[\"\"] not found.\n\tat org.json.JSONObject.get(JSONObject.java:471)\n\tat org.json.JSONObject.getJSONArray(JSONObject.java:618)\n\tat stepDefinitions.GetAPITest.postAPITest(GetAPITest.java:85)\n\tat ✽.And the temperature is warmer than 10 degrees(/Users/ankit/Downloads/APIAutomationUsingHTTPClient-master/APIAutomationUsingHTTPClient-master/src/main/java/Features/Holiday.feature:8)\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "the temperature is warmer than 10 degrees",
+            "match": {
+              "location": "GetAPITest.postAPITest()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "A Holday holiday Maker",
+    "description": "",
+    "id": "a-holday-holiday-maker",
+    "keyword": "Feature",
+    "uri": "/Users/ankit/Downloads/APIAutomationUsingHTTPClient-master/APIAutomationUsingHTTPClient-master/src/main/java/Features/Holiday.feature"
+  }
+]
